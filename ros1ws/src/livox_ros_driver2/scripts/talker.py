@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # license removed for brevity
 import rospy
-from custom_msg_ros1.msg import CustomMessage
+from livox_ros_driver2.msg import CustomMessage
 
 def talker():
     pub = rospy.Publisher('chatter', CustomMessage, queue_size=10)

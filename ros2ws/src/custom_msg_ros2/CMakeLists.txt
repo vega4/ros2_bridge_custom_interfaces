@@ -31,6 +31,10 @@ include_directories(
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/CustomMessage.msg"
+  "msg/CustomMsg.msg"
+  "msg/CustomPoint.msg"
+  DEPENDENCIES builtin_interfaces std_msgs
+  LIBRARY_NAME ${PROJECT_NAME}
 )
 
 add_executable(listener src/listener.cpp)

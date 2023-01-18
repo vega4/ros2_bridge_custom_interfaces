@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
-project(custom_msg_ros1)
+project(livox_ros_driver2)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
@@ -50,6 +50,8 @@ find_package(catkin REQUIRED COMPONENTS
  add_message_files(
    FILES
    CustomMessage.msg
+   CustomMsg.msg
+   CustomPoint.msg
  )
 
 ## Generate services in the 'srv' folder
